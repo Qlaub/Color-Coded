@@ -318,6 +318,12 @@ const showNewColors = function(fromSaved) {
             element.style.borderColor = `hsl(${h}, ${s}%, ${l}%)`;  
         });
 
+        // Update all svg fill color classes
+        updateClass = document.querySelectorAll(`.fill${i+1}`);
+        updateClass.forEach(element => {
+            element.setAttribute('fill', `hsl(${h}, ${s}%, ${l}%)`);
+        })
+
         if (i === 2 || i === 3) {
             updateButtonText(i);
         }
