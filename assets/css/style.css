@@ -171,6 +171,10 @@ button:hover {
 /*Style for Button Style End*/
 
 /*Style for Saved Palette Style Start*/
+.palette-container {
+    z-index: 2;
+}
+
 #savedPalettesPanel, #formDiv {
     width: 300px;
     margin: auto;
@@ -329,7 +333,15 @@ button:hover {
 .example-page-container {
     padding: 100px 60px;
     margin: 0px;
-    background-color: #4b9899
+    background-color: #4b9899;
+    position: relative;
+}
+
+#example-svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 
 .how-it-works {
@@ -340,6 +352,7 @@ button:hover {
     padding: 0px 20px 10px 20px;
     border-radius: 40px;
     position: relative;
+    z-index: 2;
 }
 
 .how-it-works h2 {
@@ -385,12 +398,13 @@ button:hover {
     text-align: left;
 }
 
-.gear-pattern {
+#explain-background {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
     align-self: center;
-    border-radius: 40px;
-    border: 1px solid;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .proxy-explain-container {
@@ -399,6 +413,7 @@ button:hover {
     position: relative;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .proxy-explain {
