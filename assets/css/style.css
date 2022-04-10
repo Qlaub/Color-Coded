@@ -245,6 +245,7 @@ button:hover {
     padding: 25px 15px;
     width: 30%;
     min-width: 330px;
+    position: relative;
 }
 
 .textExample, p {
@@ -256,6 +257,8 @@ button:hover {
 .textExample {
     border-radius: 20px;
     padding: 5px;
+    z-index: 2;
+    position: relative;
 }
 
 .example-container {
@@ -436,6 +439,15 @@ button:hover {
 
 .proxy-explain p {
     text-align: left;
+}
+
+.fox-background {
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 footer {
