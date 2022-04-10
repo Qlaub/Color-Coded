@@ -112,7 +112,7 @@ button:hover {
     border-radius: 20px;
     background-color: #c81a15;
     color: white;
-    font-family: Georgia, Times, "Times New Roman", serif;
+    letter-spacing: .3px;
 }
 
 .saveBtn {
@@ -121,8 +121,8 @@ button:hover {
     border-radius: 20px;
     background-color: #7dcccb;
     color: white;
-    font-family: Georgia, Times, "Times New Roman", serif;
     max-height: 38.4px;
+    letter-spacing: .3px;
 }
 
 #colorForm {
@@ -211,14 +211,13 @@ button:hover {
 .svgTrash {
     width: 35px;
     height: 35px;
-    padding: 3px;
+    padding: 5px;
     border: none;
     background-color: rgba(255, 255, 255, 0.50);
 }
 
-.savedpal, #formDiv  {
+.savedpal {
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
 }
 
 .savedpal {
@@ -226,7 +225,7 @@ button:hover {
     padding-top: 2px;
 }
 
-.saved-container, #formDiv {
+.saved-container {
     padding: 10px;
     border-color: #4b9899 !important;
     border-radius: 20px;
@@ -524,8 +523,15 @@ footer span a {
         margin: 0 0 30px 0;
     }
 
+    .proxy-explain-container h2 {
+        padding: 15px;
+        margin: 20px;
+    }
+
     .proxy-explain {
-        padding-bottom: 20px;
+        padding: 20px 15px 20px 15px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     .proxy-explain h3 {
