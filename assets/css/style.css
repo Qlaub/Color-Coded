@@ -175,11 +175,9 @@ button:hover {
     z-index: 2;
 }
 
-#savedPalettesPanel, #formDiv {
+#savedPalettesPanel {
     width: 300px;
-    margin: auto;
-    /*margin-top: 40px;*/
-    margin-bottom: 10px;
+    margin: 12px auto;
     background-color: #7dcccb;
     color: #fef9e9;
 }
@@ -191,18 +189,31 @@ button:hover {
 .savedPaletteContainer {
     padding: 15px 10px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 3px solid;
+    margin: 10px 0;
+}
+
+.savedPaletteContainer:last-of-type {
+    margin: 0;
 }
 
 .savedBlock, .deletePaletteBtn  {
     display: inline-block;
     width: 35px;
-    height: 35px;
-    border: 1px black solid; 
+    height: 35px;   
 }
+
+.deletePaletteBtn {
+    background: none;
+    border: none;
+}
+
 .svgTrash {
-    width: 90%;
-    height: 90%;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.50);
 }
 
 .savedpal, #formDiv  {
@@ -212,6 +223,7 @@ button:hover {
 
 .savedpal {
     font-size: 25px;
+    padding-top: 2px;
 }
 
 .saved-container, #formDiv {
@@ -419,17 +431,19 @@ button:hover {
     z-index: 2;
 }
 
+.proxy-explain-container h2 {
+    padding: 15px 20px;
+    margin: 20px auto 20px auto;
+    border-radius: 60px 60px;
+    font-size: 34px;
+    z-index: 2;
+}
+
 .proxy-explain {
     border-radius: 40px;
     padding: 15px;
     z-index: 2;
-    margin: 0 25px 25px 25px;
-}
-
-.proxy-explain-container h2 {
-    font-size: 34px;
-    z-index: 2;
-    padding-top: 25px;
+    margin: 0 20px 20px 20px;
 }
 
 .proxy-explain h3 {
@@ -448,6 +462,7 @@ button:hover {
     top: 0;
     bottom: 0;
     left: 0;
+    border-radius: 40px;
 }
 
 footer {

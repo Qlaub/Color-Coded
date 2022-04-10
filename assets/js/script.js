@@ -134,6 +134,7 @@ const showSavedPalettes = function (updated) {
         .css('backgroundSize', 'cover')
         // Class for further styling
         .addClass('savedPaletteContainer')
+        .addClass('border1');
 
         $(savedPaletteEL).appendTo($("#savedPalettes"));
         for (var k= 0; k < 5; k++) {
@@ -153,7 +154,7 @@ const showSavedPalettes = function (updated) {
         .attr("data-saved", i);
         var imgEl = $("<img>")
         .addClass("svgTrash")
-        .attr("src", "assets/images/trash-svgrepo-com.svg")
+        .attr("src", "assets/images/trash-new.svg")
         .attr("alt", "");
 
         $(imgEl).appendTo($(deleteBtnEl));
