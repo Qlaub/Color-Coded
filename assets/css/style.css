@@ -203,6 +203,16 @@ button:hover {
     height: 35px;   
 }
 
+.savedBlock {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+}
+
+.savedPaletteContainer span:last-of-type {
+    border-right: 1px solid;
+}
+
 .deletePaletteBtn {
     background: none;
     border: none;

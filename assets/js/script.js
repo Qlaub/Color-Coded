@@ -142,6 +142,7 @@ const showSavedPalettes = function (updated) {
             var tempBlock = savedPal[k];
             var savedBlockEl = $("<span>")
             .addClass("savedBlock")
+            .addClass('border1')
             .attr("data-saved", i);
             
             var color = 'rgb(' + tempBlock.rgb[0] + ',' + tempBlock.rgb[1] + ',' +  tempBlock.rgb[2] + ')';
