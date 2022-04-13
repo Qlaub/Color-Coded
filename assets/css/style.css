@@ -594,4 +594,12 @@ footer span a {
     .palette {
         margin: 90px 0 20px 0;
     }
+
+    #colBlock1,
+    #colBlock2,
+    #colBlock3,
+    #colBlock4,
+    #colBlock5 {
+        display: contents;
+    }
 }
