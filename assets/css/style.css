@@ -297,6 +297,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .lzdog1 {
@@ -472,6 +473,15 @@ button:hover {
 
 .proxy-explain p {
     text-align: left;
+}
+
+#example-background {
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .fox-background {
