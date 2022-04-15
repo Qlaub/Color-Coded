@@ -20,7 +20,7 @@
                 </div>
             </header>
             <div id="CORS" class="invisible">
-                <p>We use a proxy server (CORS Anywhere) to help us retrieve computer generated color palettes. Before you can use our website, you must be given temporary access to CORS Anywhere. Please click the following link and push the "request temporary access" button. We hope you enjoy!</p>
+                <p>We use CORS Anywhere to help us retrieve our color palettes. Please click the following link and then click "Request temporary access to the demo server" to use our website (the "Generate" button won't work until doing so). We hope you enjoy!</p>
                 <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">https://cors-anywhere.herokuapp.com/corsdemo</a>
             </div>
 
@@ -130,20 +130,20 @@
 
         <div class="pure-u-1-1 pure-u-lg-17-24 background3 how-container">
             <section class="how-it-works background1">
-                <h2 class="text1 background5">How it works:</h2>
+                <h2 class="text1 background5">How It Works:</h2>
                 <div class="how-step background5">
                     <h3 class="text1">Generate</h3>
-                    <p class="text1">Simply click on the "Generate" button above and a new palette of colors and a frontpage image will be generated. The newly generated colors will update on this page to help you see if the design is right for you. You can enter an optional starting hex value above the Generate button. The palette will be built around the color you enter.</p>
+                    <p class="text1">Simply click on the "Generate" button above and a new palette of colors along with a random background image will be generated. This website automatically changes colors to match the new palette! If you enter a starting hex value (located above the Generate button), the next newly generated palette will be built around the color you entered.</p>
                 </div>
 
                 <div class="how-step background5">
                     <h3 class="text1">Lock</h3>
-                    <p class="text1">You can lock a color by clicking on that color's block at the top of the page. Locked colors won't change (much) when generating a new design.</p>
+                    <p class="text1">Click on a color block at the top of the page to lock a particular color. Locked colors won't change (much) when generating a new design. Multiple colors can be locked!</p>
                 </div>
 
                 <div class="how-step background5">
                     <h3 class="text1">Save</h3>
-                    <p class="text1">Once you've decided you like a particular design, press the save button. Your design will show up in the "Saved Palettes" section.</p>
+                    <p class="text1">Click on the "Save" button to add the current design to your saved palettes. Saved palettes won't go away after closing your browser and can be accessed in the "Saved Palettes" section.</p>
                 </div>
 
                 <div class="how-step background5">
@@ -153,14 +153,14 @@
             </section>
 
             <section class="proxy-explain-container background4">
-                <h2 class="text1 background5">Why do you use a proxy server?</h2>
+                <h2 class="text1 background5">Why Do You Use a Proxy Server?</h2>
                 <div class="proxy-explain background5">
                     <h3 class="text1">The simple explanation:</h3>
-                    <p class="text1">It helps us retrieve our color palette data by acting as a middleman between where we get our data and where we host our web page.</p>
+                    <p class="text1">It helps us retrieve our color palettes by acting as a middleman between where we get our data and where we host our web page.</p>
                 </div>
                 <div class="proxy-explain background5">
                     <h3 class="text1">The more technical explanation:</h3>
-                    <p class="text1">We're hosting our website using GitHub Pages, which uses the HTTPS protocol. The ColorMind API, where we receive our color palettes, uses the HTTP protocol (notice the lack of "S").
+                    <p class="text1">We host our website using GitHub Pages, which uses the HTTPS protocol. The ColorMind API, where we receive our color palettes, uses the HTTP protocol (notice the lack of "S").
                         As a result of the difference between these two protocols, most modern browsers block the ColorMind API. CORS Anywhere, our proxy server, acts as an
                         intermediary and sends ColorMind's data to GitHub Pages using the HTTPS protocol. This allows your browser to accept palettes coming from the ColorMind API.
                     </p>
