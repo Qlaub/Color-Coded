@@ -180,6 +180,22 @@ button:hover {
 }
 /*Style for Button Style End*/
 
+/* Modal styling */
+#save-modal {
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+}
+
+#save-modal::backdrop {
+    background: rgba(0, 0, 0, 0.40);
+}
+
+#save-modal-form {
+    margin: auto;
+    display: flex;
+}
+
 /*Style for Saved Palette Style Start*/
 .palette-container {
     z-index: 2;

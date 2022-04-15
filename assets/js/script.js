@@ -7,6 +7,8 @@
 // If background image is too dark for dark text, change to light text
 
 const buttonEl = document.getElementById('generate-colors');
+const closeModalEl = document.getElementById('save-cancel');
+const saveModal = document.getElementById('save-modal');
 let backgroundImages = [];
 let darkMode = false;
 let errorFlag = true;
@@ -630,6 +632,8 @@ showSavedPalettes(false);
 
 // Event listener for palette save button
 $(".saveBtn").on("click", function() {
+    // show modal
+    saveModal.showModal();
     //add current palette to array of palettes
     // Deep copy made so that arrays don't point at same place in memory (so that when palette is updated savedPalettes isn't updated as well)
     let paletteDeepCopy = JSON.parse(JSON.stringify(palette));
@@ -641,7 +645,12 @@ $(".saveBtn").on("click", function() {
     } 
 });
 
-// Event listener for pPreviously saved palettes when clicked
+// Close save modal when cancel is clicked
+closeModalEl.addEventListener('click', () => {
+    saveModal.close();
+})
+
+// Event listener for previously saved palettes when clicked
 $("#savedPalettes").on("click", "div", function(event) {
     // guard clause in case trash icon was clicked
     if (event.className === 'svgTrash') {return};
